@@ -4,8 +4,8 @@ function agregarContacto(contacto) {
     listaContactos.push(contacto);
 }
 
-imprimirContactos();
 agregarContacto();
+imprimirContactos();
 
 function borrarContacto(contacto) {
   const indice = listaContactos.indexOf(contacto);
@@ -13,9 +13,9 @@ function borrarContacto(contacto) {
     listaContactos.splice(indice, 1);
   }
 }
+borrarContacto();
 imprimirContactos();
 
-borrarContacto();
 
 function imprimirContactos() {
   console.log("Lista de contactos:");
